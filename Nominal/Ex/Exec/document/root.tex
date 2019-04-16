@@ -1,0 +1,81 @@
+\documentclass{llncs}
+\usepackage[utf8]{inputenc}
+\usepackage{lineno}
+\usepackage{url}
+\usepackage{amsmath,amssymb}
+\usepackage{isabelle,isabellesym}
+\usepackage{pdfsetup}
+\usepackage{ot1patch}
+%\usepackage{boxedminipage}
+
+\allowdisplaybreaks
+\urlstyle{rm}
+\isabellestyle{it}
+\renewcommand{\isastyleminor}{\it}%
+\renewcommand{\isastyle}{\normalsize\it}%
+
+\DeclareRobustCommand{\flqq}{\mbox{\guillemotleft}}
+\DeclareRobustCommand{\frqq}{\mbox{\guillemotright}}
+\renewcommand{\isacharunderscore}{\mbox{$\_\!\_$}}
+\renewcommand{\isasymbullet}{{\raisebox{0.2mm}{\small$\bullet$}}}
+\renewcommand{\isasymintegral}{$\lambda$}
+\renewcommand{\isasymlbrace}{$\ulcorner$}
+\renewcommand{\isasymrbrace}{$\urcorner$}
+%\renewcommand{\isasymguillemotleft}{}
+%\renewcommand{\isasymguillemotright}{}
+
+\def\dn{\,\stackrel{\mbox{\scriptsize def}}{=}\,}
+\renewcommand{\isasymequiv}{=}
+%%\renewcommand{\isasymiota}{}
+\renewcommand{\isasymxi}{$..$}
+\renewcommand{\isasymemptyset}{$\varnothing$}
+\newcommand{\isasymnotapprox}{$\not\approx$}
+\newcommand{\isasymLET}{$\mathtt{let}$}
+\newcommand{\isasymAND}{$\mathtt{and}$}
+\newcommand{\isasymIN}{$\mathtt{in}$}
+\newcommand{\isasymEND}{$\mathtt{end}$}
+\newcommand{\isasymBIND}{$\mathtt{bind}$}
+\newcommand{\isasymANIL}{$\mathtt{anil}$}
+\newcommand{\isasymACONS}{$\mathtt{acons}$}
+\newcommand{\isasymCASE}{$\mathtt{case}$}
+\newcommand{\isasymOF}{$\mathtt{of}$}
+\newcommand{\isasymAL}{\makebox[0mm][l]{$^\alpha$}}
+\newcommand{\isasymPRIME}{\makebox[0mm][l]{$'$}}
+\newcommand{\isasymFRESH}{\#}
+\newcommand{\LET}{\;\mathtt{let}\;}
+\newcommand{\IN}{\;\mathtt{in}\;}
+\newcommand{\END}{\;\mathtt{end}\;}
+\newcommand{\AND}{\;\mathtt{and}\;}
+\newcommand{\fv}{\mathit{fv}}
+
+\newcommand{\numbered}[1]{\refstepcounter{equation}{\rm(\arabic{equation})}\label{#1}}
+\newenvironment{proof-of}[1]{{\em Proof of #1:}}{}
+
+\begin{document}
+
+\title{Execution modulo alpha-equivalence}
+\author{...\inst{1} \and ...\inst{2}}
+\institute{... \and ...}
+
+\maketitle
+
+\begin{abstract}
+  In this paper we show how a formal specification defined modulo
+  alpha-equivalence can be programatically made executable.
+  We show a general algorithm and we present examples of
+  executed calculi, which we implement in Nominal Isabelle.
+\end{abstract}
+
+\input{session}
+
+%\begin{spacing}{0.9}
+\bibliographystyle{abbrv}
+\bibliography{root}
+%\end{spacing}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
